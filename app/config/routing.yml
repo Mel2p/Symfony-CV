@@ -1,0 +1,5 @@
+mp_platform:
+    resource: "@MPPlatformBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
