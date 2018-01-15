@@ -1,0 +1,14 @@
+{% extends "MPPlatformBundle::layout.html.twig" %}
+
+{% block body %}
+
+    <h2>Ajouter un article</h2>
+
+    {{ include("MPPlatformBundle:Advert:form.html.twig") }}
+
+    <p>
+        Attention : cet article sera ajoutée directement
+        sur la page d'accueil après validation du formulaire.
+    </p>
+
+{% endblock %}

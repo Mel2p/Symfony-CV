@@ -1,4 +1,38 @@
+mp_platform_home:
+    path:      /{page}
+    defaults:
+        _controller: MPPlatformBundle:Advert:index
+        page:        1
+    requirements:
+        page: \d*
+    
+mp_platform_view:
+    path:      /advert/{id}
+    defaults:
+        _controller: MPPlatformBundle:Advert:view
+    requirements:
+        id: \d+
+    
+mp_platform_add:
+    path:      /add
+    defaults:
+        _controller: MPPlatformBundle:Advert:add
 
-hello_the_world:
-    path:     /hello-world
-    defaults: { _controller: MPPlatformBundle:Advert:index }
+mp_platform_edit:
+    path:      /edit/{id}
+    defaults:
+        _controller: MPPlatformBundle:Advert:edit
+    requirements:
+        id: \d+
+
+mp_platform_delete:
+    path:      /delete/{id}
+    defaults:
+        _controller: MPPlatformBundle:Advert:delete
+    requirements:
+        id: \d+
+
+mp_platform_cv:
+    path:      /cv
+    defaults:
+        _controller: MPPlatformBundle:Advert:cv

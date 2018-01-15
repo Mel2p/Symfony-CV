@@ -1,0 +1,24 @@
+{% extends "MPPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+    Modifier un article - {{ parent() }}
+{% endblock %}
+
+{% block mpplatform_body %}
+
+    <h2>Modifier un article</h2>
+
+    {{ include("MPPlatformBundle:Advert:form.html.twig") }}
+
+    <p>
+        Vous éditez un article déjà existant, ne le changer pas trop
+    </p>
+
+    <p>
+        <a href="{{ path('mp_platform_view', {'id': advert.id}) }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à l'article
+        </a>
+    </p>
+
+{% endblock %}
